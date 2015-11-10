@@ -1,0 +1,27 @@
+DEPENDENCIES
+  chocolatey
+    git: git://github.com/chocolatey/chocolatey-cookbook.git
+    revision: d49872734c0b6d480f33a5d9414ff7cf6e9e0455
+  chocolatey-installer
+  minitest-handler
+  sitecore8-installer
+    path: .
+    metadata: true
+  windows (~> 1.38.3)
+
+GRAPH
+  chef_handler (1.2.0)
+  chocolatey (0.4.1)
+    windows (~> 1.31)
+  chocolatey-installer (1.0.0)
+    chocolatey (>= 0.0.0)
+    windows (>= 0.0.0)
+  minitest-handler (1.5.0)
+    chef_handler (>= 0.0.0)
+  sitecore8-installer (1.0.0)
+    chocolatey (>= 0.0.0)
+    chocolatey-installer (>= 0.0.0)
+    minitest-handler (>= 0.0.0)
+    windows (>= 0.0.0)
+  windows (1.38.3)
+    chef_handler (>= 0.0.0)
